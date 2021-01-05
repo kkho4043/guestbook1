@@ -10,8 +10,6 @@
 <%
    	GuestDao guestDao = new GuestDao();
     List<GuestVo> guestlist = guestDao.getguestList();
-    
-    
 %>
 <!DOCTYPE html>
 <html>
@@ -48,7 +46,6 @@
 	%>
 	<br>
 	<table border = 1 width = 500>
-	
 		<tr>
 			<td><%=vo.getGuestno()%> </td>
 			<td><%=vo.getName()%></td>
@@ -59,7 +56,6 @@
 		<tr>
 			<td colspan="4"   ><%=vo.getContent()%></td>
 		</tr>
-		
 	</table>
 	<%}%>
 	
