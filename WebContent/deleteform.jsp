@@ -31,5 +31,6 @@
 			<input type="hidden" name = "password" value="<%=password%>">
 			<button type = "submit">변경</button>	
 	</form>
+	<a href= "./list.jsp">리스트로가기</a>
 </body>
 </html>

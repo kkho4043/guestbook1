@@ -13,8 +13,9 @@
 	System.out.println(password);
 	if(password.equals(pwd)){
 		guestdao.guestDelete(no);
+		response.sendRedirect("list.jsp");
 	}
-	response.sendRedirect("list.jsp");
+	
 %>    
     
 <!DOCTYPE html>
@@ -24,5 +25,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+	비밀번호가 틀렸습니다<br>
+	<a href= "./deleteform.jsp?no=<%=no%>&pwd=<%=password%>">다시입력하기</a>
+	
+	<a href= "./list.jsp">리스트로가기</a>
 </body>
 </html>
