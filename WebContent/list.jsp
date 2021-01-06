@@ -25,7 +25,7 @@
 				<td>이름</td>
 				<td><input type ="text" name = "name"></td>
 				<td>비밀번호</td>
-				<td><input type ="text" name = "paw"></td>
+				<td><input type ="text" name = "pwd"></td>
 			</tr>
 			<tr>
 				<td colspan="4">
@@ -50,7 +50,7 @@
 			<td><%=vo.getGuestno()%> </td>
 			<td><%=vo.getName()%></td>
 			<td><%=vo.getDate()%></td>
-			<td><a href= "./delete.jsp?no=<%=vo.getGuestno()%>">삭제</a></td>
+			<td><a href= "./deleteform.jsp?no=<%=vo.getGuestno()%>&pwd=<%=vo.getPassword()%>">삭제</a></td>
 			
 		</tr>
 		<tr>

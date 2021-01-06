@@ -3,11 +3,17 @@
 <%@page import="com.javaex.dao.GuestDao"%>
 <%@page import="com.javaex.vo.GuestVo"%>   
 <%@page import="java.util.List"%>
-<%
+<%  
 	int no = Integer.parseInt(request.getParameter("no"));
+	String pwd = request.getParameter("pwd");
+	String password = request.getParameter("password");
 	
 	GuestDao guestdao = new GuestDao();
-	guestdao.guestDelete(no);
+	System.out.println(pwd);
+	System.out.println(password);
+	if(password.equals(pwd)){
+		guestdao.guestDelete(no);
+	}
 	response.sendRedirect("list.jsp");
 %>    
     
